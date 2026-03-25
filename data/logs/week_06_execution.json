@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-03-18 12:18:22",
+  "week_processed": 6,
+  "next_week": 7,
+  "summary": {
+    "1": {
+      "old_size": 15,
+      "new_size": 16,
+      "new_value": -7.293110044457833e-21,
+      "old_best": 2.569308323264287e-12,
+      "new_best": 2.569308323264287e-12,
+      "improved": 

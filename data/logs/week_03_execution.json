@@ -1,0 +1,218 @@
+{
+  "timestamp": "2026-02-18 08:17:08",
+  "week_processed": 3,
+  "next_week": 4,
+  "summary": {
+    "1": {
+      "improved": false
+    },
+    "2": {
+      "improved": false
+    },
+    "3": {
+      "improved": false
+    },
+    "4": {
+      "improved": false
+    },
+    "5": {
+      "improved": false
+    },
+    "6": {
+      "improved": false
+    },
+    "7": {
+      "improved": false
+    },
+    "8": {
+      "improved": false
+    }
+  },
+  "proposals": [
+    {
+      "function": 1,
+      "input_array": [
+        0.5471893419446143,
+        0.4311777706536939
+      ],
+      "portal_string": "0.547189-0.431178",
+      "current_best": 7.710875114502849e-16,
+      "n_evaluations": 13,
+      "description": "2D source localisation (contamination/radiation detection)",
+      "diagnostics": {
+        "status": "ok",
+        "acquisition": "ei",
+        "best_score": 0.2942969996377046,
+        "y_best_scaled": 0.28867513459554844,
+        "y_best_original": 7.710875114502849e-16,
+        "n_candidates": 200000,
+        "kernel": "1.02**2 * Matern(length_scale=[0.0185, 100], nu=2.5) + WhiteKernel(noise_level=5.69e-06)"
+      }
+    },
+    {
+      "function": 2,
+      "input_array": [
+        0.7796908057296316,
+        0.9084262303925028
+      ],
+      "portal_string": "0.779691-0.908426",
+      "current_best": 0.6112052157614438,
+      "n_evaluations": 13,
+      "description": "2D noisy scoring system with local optima",
+      "diagnostics": {
+        "status": "ok",
+        "acquisition": "ei",
+        "best_score": 0.1434111707951794,
+        "y_best_scaled": 1.3950168232358142,
+        "y_best_original": 0.6112052157614438,
+        "n_candidates": 200000,
+        "kernel": "0.976**2 * Matern(length_scale=[0.165, 0.145], nu=2.5) + WhiteKernel(noise_level=2.82e-09)"
+      }
+    },
+    {
+      "function": 3,
+      "input_array": [
+        0.5177138568726056,
+        0.001259941031933276,
+        0.5271040714653012
+      ],
+      "portal_string": "0.517714-0.001260-0.527104",
+      "current_best": -0.034835313350078584,
+      "n_evaluations": 18,
+      "description": "3D drug discovery mixture optimisation",
+      "diagnostics": {
+        "status": "ok",
+        "acquisition": "ei",
+        "best_score": 0.24689740986157127,
+        "y_best_scaled": 0.8405796391422903,
+        "y_best_original": -0.034835313350078584,
+        "n_candidates": 200000,
+        "kernel": "1.26**2 * Matern(length_scale=[100, 1.5, 0.0741], nu=2.5) + WhiteKernel(noise_level=1.16e-09)"
+      }
+    },
+    {
+      "function": 4,
+      "input_array": [
+        0.3900986952973514,
+        0.3607679562422309,
+        0.40772835595169965,
+        0.45690808191621857
+      ],
+      "portal_string": "0.390099-0.360768-0.407728-0.456908",
+      "current_best": 0.45506586873199284,
+      "n_evaluations": 33,
+      "description": "4D business configuration with costly evaluations",
+      "diagnostics": {
+        "status": "ok",
+        "acquisition": "ei",
+        "best_score": 0.00843507918357949,
+        "y_best_scaled": 1.948543149884776,
+        "y_best_original": 0.45506586873199284,
+        "n_candidates": 200000,
+        "kernel": "2.92**2 * Matern(length_scale=[1.55, 1.51, 1.39, 1.45], nu=2.5) + WhiteKernel(noise_level=0.000238)"
+      }
+    },
+    {
+      "function": 5,
+      "input_array": [
+        0.9963814298919723,
+        0.948228629720869,
+        0.9984166243477108,
+        0.5629203069099601
+      ],
+      "portal_string": "0.996381-0.948229-0.998417-0.562920",
+      "current_best": 7206.272248717776,
+      "n_evaluations": 23,
+      "description": "4D chemical process yield maximisation",
+      "diagnostics": {
+        "status": "ok",
+        "acquisition": "ei",
+        "best_score": 0.4191539315559506,
+        "y_best_scaled": 4.249148961750917,
+        "y_best_original": 7206.272248717776,
+        "n_candidates": 200000,
+        "kernel": "4.89**2 * Matern(length_scale=[1.58, 7.13, 0.828, 54.2], nu=2.5) + WhiteKernel(noise_level=0.00482)"
+      }
+    },
+    {
+      "function": 6,
+      "input_array": [
+        0.48551906974250103,
+        0.174153655407841,
+        0.6280785397953268,
+        0.6832100420846869,
+        0.008467078037704079
+      ],
+      "portal_string": "0.485519-0.174154-0.628079-0.683210-0.008467",
+      "current_best": -0.510686,
+      "n_evaluations": 23,
+      "description": "5D recipe-style optimisation",
+      "diagnostics": {
+        "status": "ok",
+        "acquisition": "ei",
+        "best_score": 0.13647575375459392,
+        "y_best_scaled": 1.7013066957832041,
+        "y_best_original": -0.510686,
+        "n_candidates": 200000,
+        "kernel": "1.36**2 * Matern(length_scale=[0.671, 0.942, 1.04, 1.08, 0.974], nu=2.5) + WhiteKernel(noise_level=1e-06)"
+      }
+    },
+    {
+      "function": 7,
+      "input_array": [
+        0.04970522276287803,
+        0.3650546570749438,
+        0.22092764195786196,
+        0.11158528644955967,
+        0.34542572361759594,
+        0.841939265696292
+      ],
+      "portal_string": "0.049705-0.365055-0.220928-0.111585-0.345426-0.841939",
+      "current_best": 1.6488039089982314,
+      "n_evaluations": 33,
+      "description": "6D hyperparameter tuning",
+      "diagnostics": {
+        "status": "ok",
+        "acquisition": "ei",
+        "best_score": 0.21006107486662673,
+        "y_best_scaled": 3.6562686834949134,
+        "y_best_original": 1.6488039089982314,
+        "n_candidates": 200000,
+        "kernel": "1.07**2 * Matern(length_scale=[0.955, 0.406, 100, 0.695, 0.333, 0.551], nu=2.5) + WhiteKernel(noise_level=0.00238)"
+      }
+    },
+    {
+      "function": 8,
+      "input_array": [
+        0.12744544138595892,
+        0.0679877240408081,
+        0.0632247795065467,
+        0.21298637627771022,
+        0.9729865805982821,
+        0.24559230049119163,
+        0.24695374883989873,
+        0.5008253835975651
+      ],
+      "portal_string": "0.127445-0.067988-0.063225-0.212986-0.972987-0.245592-0.246954-0.500825",
+      "current_best": 9.9598463043471,
+      "n_evaluations": 43,
+      "description": "8D high-dimensional hyperparameter optimisation",
+      "diagnostics": {
+        "status": "ok",
+        "acquisition": "ei",
+        "best_score": 0.014011857668684138,
+        "y_best_scaled": 1.8961226513308147,
+        "y_best_original": 9.9598463043471,
+        "n_candidates": 200000,
+        "kernel": "6.13**2 * Matern(length_scale=[4.41, 6.63, 3.49, 7.19, 21.2, 6.53, 4.41, 100], nu=2.5) + WhiteKernel(noise_level=2.82e-07)"
+      }
+    }
+  ],
+  "method": "Gaussian Process with Expected Improvement",
+  "settings": {
+    "kernel": "Constant \u00d7 Mat\u00e9rn(\u03bd=2.5) + WhiteKernel",
+    "acquisition": "Expected Improvement",
+    "ei_xi": 0.01,
+    "n_candidates": 200000
+  }
+}
