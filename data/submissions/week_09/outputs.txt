@@ -1,4 +1,8 @@
-# Week 9 Outputs
-# Fill after portal submission
-# One value per line (8 total)
-
+0.000000
+0.614482
+-0.057504
+-1.536502
+184.057088
+-0.597876
+2.307420
+9.853102

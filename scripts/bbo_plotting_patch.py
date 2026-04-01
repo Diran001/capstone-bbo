@@ -1,17 +1,27 @@
 """
 Enhanced plotting patch for CapStone_BBO_Workflow.ipynb
+
 Tailored to the repo structure in CapStone_BBO_git.
 
-Usage in notebook:
-    # after your existing imports / GP functions are defined
-    from bbo_plotting_patch import *
+Notebook integration pattern:
+    # in the notebook plotting cell
+    from bbo_plotting_patch import generate_enhanced_plots
 
-    # then call
-    generate_enhanced_plots(week_num=week_num, show_inline=True)
+    # the notebook then exposes its own backward-compatible wrapper:
+    # generate_all_plots(week_num=RUN_WEEK, show_inline=True)
 
-This module expects these notebook globals to exist:
-    DATA_ROOT, PLOTS_DIR, INITIAL_SIZES, FUNCTION_DESCRIPTIONS,
-    fit_gp_surrogate, get_bbo_tuning
+This module intentionally provides the plotting engine only.
+The notebook remains responsible for:
+    - importing and reloading this module
+    - passing notebook globals into generate_enhanced_plots(...)
+    - deciding whether plots are saved under current/ or historical/week_##
+
+Expected notebook objects passed into generate_enhanced_plots(...):
+    DATA_ROOT
+    PLOTS_DIR
+    INITIAL_SIZES
+    FUNCTION_DESCRIPTIONS
+    fit_gp_surrogate
 """
 
 from __future__ import annotations
@@ -32,6 +42,10 @@ except Exception:  # pragma: no cover
     pd = None
 
 from sklearn.decomposition import PCA
+
+__all__ = [
+    "generate_enhanced_plots",
+]
 
 
 # -----------------------------------------------------------------------------
