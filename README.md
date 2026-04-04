@@ -9,7 +9,7 @@ The workflow is built to be repeatable, traceable, and easy to defend. The noteb
 ## Live repository structure
 
 ```text
-CapStone_BBO/
+CapStone_BBO_git/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
@@ -28,7 +28,9 @@ CapStone_BBO/
 ├── docs/
 │   ├── CapStone_BBO_Setup_Guide.md
 │   ├── README_bbo_export.md
-│   └── README_export.md
+│   ├── README_export.md
+│   ├── datasheet_bbo_dataset.md
+│   └── model_card_bbo_optimisation.md
 └── data/
     ├── initial_data/
     ├── processed/
@@ -89,3 +91,8 @@ Run scripts from the repository root, for example:
 ## Notes
 
 This is the main public entry point for the repository. Supporting write-ups are kept in `docs/`.
+
+## Project documentation
+
+- [Datasheet for the BBO data set](docs/datasheet_bbo_dataset.md)
+- [Model card for the BBO optimisation approach](docs/model_card_bbo_optimisation.md)
