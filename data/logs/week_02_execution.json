@@ -1,12 +1,277 @@
 {
-  "timestamp": "2026-02-09 09:08:40",
+  "timestamp": "2026-04-05 11:21:59",
+  "run_week": 2,
   "week_processed": 2,
   "next_week": 3,
+  "tuning_week_used": null,
   "summary": {
     "1": {
-      "old_size": 14,
-      "new_size": 15,
-      "new_value": -2.6360300027271145e-86,
-      "old_best": 7.710875114502849e-16,
-      "new_best": 7.710875114502849e-16,
-      "improved": 
+      "improved": false
+    },
+    "2": {
+      "improved": false
+    },
+    "3": {
+      "improved": false
+    },
+    "4": {
+      "improved": false
+    },
+    "5": {
+      "improved": false
+    },
+    "6": {
+      "improved": false
+    },
+    "7": {
+      "improved": false
+    },
+    "8": {
+      "improved": false
+    }
+  },
+  "proposals": [
+    {
+      "function": 1,
+      "input_array": [
+        0.11978759153264373,
+        0.7967869713266928
+      ],
+      "portal_string": "0.119788-0.796787",
+      "current_best": 2.569308323264287e-12,
+      "n_evaluations": 19,
+      "description": "2D source localisation (contamination/radiation detection)",
+      "diagnostics": {
+        "status": "ok",
+        "func_id": 1,
+        "run_week": 2,
+        "tuning_week": null,
+        "acquisition": "ei",
+        "xi": 0.001,
+        "kappa": 2.0,
+        "best_score": 0.32794659276188876,
+        "pred_mean_scaled": 0.05560710969512367,
+        "pred_std_scaled": 1.0331786839740418,
+        "y_best_scaled": 0.23570226323173402,
+        "y_best_original": 2.569308323264287e-12,
+        "n_candidates": 200000,
+        "kernel": "1.06**2 * Matern(length_scale=[0.0228, 10], nu=2.5) + WhiteKernel(noise_level=3.43e-09)"
+      }
+    },
+    {
+      "function": 2,
+      "input_array": [
+        0.026095873164115546,
+        0.9998364516476629
+      ],
+      "portal_string": "0.026096-0.999836",
+      "current_best": 0.614482,
+      "n_evaluations": 19,
+      "description": "2D noisy scoring system with local optima",
+      "diagnostics": {
+        "status": "ok",
+        "func_id": 2,
+        "run_week": 2,
+        "tuning_week": null,
+        "acquisition": "ei",
+        "xi": 0.001,
+        "kappa": 2.0,
+        "best_score": 0.05186261362321605,
+        "pred_mean_scaled": 0.7442462241634683,
+        "pred_std_scaled": 0.5561560095921683,
+        "y_best_scaled": 1.2661197771237636,
+        "y_best_original": 0.614482,
+        "n_candidates": 200000,
+        "kernel": "1.01**2 * Matern(length_scale=[0.0575, 0.721], nu=2.5) + WhiteKernel(noise_level=0.0059)"
+      }
+    },
+    {
+      "function": 3,
+      "input_array": [
+        0.18449107069760184,
+        0.9961765552974685,
+        0.0879107715770795
+      ],
+      "portal_string": "0.184491-0.996177-0.087911",
+      "current_best": -0.034835313350078584,
+      "n_evaluations": 24,
+      "description": "3D drug discovery mixture optimisation",
+      "diagnostics": {
+        "status": "ok",
+        "func_id": 3,
+        "run_week": 2,
+        "tuning_week": null,
+        "acquisition": "ei",
+        "xi": 0.001,
+        "kappa": 2.0,
+        "best_score": 0.231947156830781,
+        "pred_mean_scaled": 0.9526539867035895,
+        "pred_std_scaled": 0.47717363539699287,
+        "y_best_scaled": 0.8735746984291421,
+        "y_best_original": -0.034835313350078584,
+        "n_candidates": 200000,
+        "kernel": "1.23**2 * Matern(length_scale=[10, 1.35, 0.061], nu=2.5) + WhiteKernel(noise_level=4.61e-09)"
+      }
+    },
+    {
+      "function": 4,
+      "input_array": [
+        0.4032097235059954,
+        0.4280616140135374,
+        0.40098241008843183,
+        0.4244271960215772
+      ],
+      "portal_string": "0.403210-0.428062-0.400982-0.424427",
+      "current_best": 0.45506586873199284,
+      "n_evaluations": 39,
+      "description": "4D business configuration with costly evaluations",
+      "diagnostics": {
+        "status": "ok",
+        "func_id": 4,
+        "run_week": 2,
+        "tuning_week": null,
+        "acquisition": "ei",
+        "xi": 0.001,
+        "kappa": 2.0,
+        "best_score": 0.008383133943859679,
+        "pred_mean_scaled": 1.4348159048182367,
+        "pred_std_scaled": 0.046699218336530075,
+        "y_best_scaled": 1.4600321432390475,
+        "y_best_original": 0.45506586873199284,
+        "n_candidates": 200000,
+        "kernel": "2.75**2 * Matern(length_scale=[1.65, 1.55, 1.49, 1.52], nu=2.5) + WhiteKernel(noise_level=0.00181)"
+      }
+    },
+    {
+      "function": 5,
+      "input_array": [
+        0.049282225160121595,
+        0.019064877094918664,
+        0.039272961537786255,
+        0.02147831244673959
+      ],
+      "portal_string": "0.049282-0.019065-0.039273-0.021478",
+      "current_best": 7510.798970698351,
+      "n_evaluations": 29,
+      "description": "4D chemical process yield maximisation",
+      "diagnostics": {
+        "status": "ok",
+        "func_id": 5,
+        "run_week": 2,
+        "tuning_week": null,
+        "acquisition": "ei",
+        "xi": 0.001,
+        "kappa": 2.0,
+        "best_score": 2.4115080069642006e-07,
+        "pred_mean_scaled": -0.4702500165017798,
+        "pred_std_scaled": 0.6354756552741437,
+        "y_best_scaled": 2.465911408493809,
+        "y_best_original": 7510.798970698351,
+        "n_candidates": 200000,
+        "kernel": "1.92**2 * Matern(length_scale=[1.46, 1.29, 1.58, 1.25], nu=2.5) + WhiteKernel(noise_level=1e-10)"
+      }
+    },
+    {
+      "function": 6,
+      "input_array": [
+        0.4920075513623521,
+        0.3199619000884548,
+        0.5049191462997632,
+        0.9987651878344146,
+        0.0005933312178296735
+      ],
+      "portal_string": "0.492008-0.319962-0.504919-0.998765-0.000593",
+      "current_best": -0.510686,
+      "n_evaluations": 29,
+      "description": "5D recipe-style optimisation",
+      "diagnostics": {
+        "status": "ok",
+        "func_id": 6,
+        "run_week": 2,
+        "tuning_week": null,
+        "acquisition": "ei",
+        "xi": 0.001,
+        "kappa": 2.0,
+        "best_score": 0.10251197147135821,
+        "pred_mean_scaled": 1.3227874358758336,
+        "pred_std_scaled": 0.3573569023485542,
+        "y_best_scaled": 1.410666642722299,
+        "y_best_original": -0.510686,
+        "n_candidates": 200000,
+        "kernel": "1.66**2 * Matern(length_scale=[0.772, 1.54, 1.37, 1.68, 2.24], nu=2.5) + WhiteKernel(noise_level=0.1)"
+      }
+    },
+    {
+      "function": 7,
+      "input_array": [
+        0.014994247991055198,
+        0.2770805433754663,
+        0.02687880173177415,
+        0.351777573208909,
+        0.3245699012300386,
+        0.6203718554233819
+      ],
+      "portal_string": "0.014994-0.277081-0.026879-0.351778-0.324570-0.620372",
+      "current_best": 2.4253335916220515,
+      "n_evaluations": 39,
+      "description": "6D hyperparameter tuning",
+      "diagnostics": {
+        "status": "ok",
+        "func_id": 7,
+        "run_week": 2,
+        "tuning_week": null,
+        "acquisition": "ei",
+        "xi": 0.001,
+        "kappa": 2.0,
+        "best_score": 0.008699639521769328,
+        "pred_mean_scaled": 2.6129958996021942,
+        "pred_std_scaled": 0.1305670858961408,
+        "y_best_scaled": 2.757557734810362,
+        "y_best_original": 2.4253335916220515,
+        "n_candidates": 200000,
+        "kernel": "0.668**2 * Matern(length_scale=[0.7, 0.329, 10, 0.353, 0.279, 0.234], nu=2.5) + WhiteKernel(noise_level=4.98e-10)"
+      }
+    },
+    {
+      "function": 8,
+      "input_array": [
+        0.0012294656142808336,
+        0.08958111703627858,
+        0.1382618006803521,
+        0.5656212549470045,
+        0.9364448239598557,
+        0.5318305732361222,
+        0.06551044660035266,
+        0.39498227445925016
+      ],
+      "portal_string": "0.001229-0.089581-0.138262-0.565621-0.936445-0.531831-0.065510-0.394982",
+      "current_best": 9.9598463043471,
+      "n_evaluations": 49,
+      "description": "8D high-dimensional hyperparameter optimisation",
+      "diagnostics": {
+        "status": "ok",
+        "func_id": 8,
+        "run_week": 2,
+        "tuning_week": null,
+        "acquisition": "ei",
+        "xi": 0.001,
+        "kappa": 2.0,
+        "best_score": 0.009623044176289085,
+        "pred_mean_scaled": 1.4874130056050063,
+        "pred_std_scaled": 0.04632113648174443,
+        "y_best_scaled": 1.508106457784018,
+        "y_best_original": 9.9598463043471,
+        "n_candidates": 200000,
+        "kernel": "3.13**2 * Matern(length_scale=[3.21, 4.66, 2.41, 8.29, 10, 4.37, 3.3, 10], nu=2.5) + WhiteKernel(noise_level=1e-10)"
+      }
+    }
+  ],
+  "method": "Gaussian Process with function-specific EI/UCB tuning",
+  "settings": {
+    "kernel": "Constant \u00d7 Mat\u00e9rn(\u03bd=2.5) + WhiteKernel",
+    "default_ei_xi": 0.001,
+    "default_ucb_kappa": 2.0,
+    "default_n_candidates": 200000,
+    "resolved_week_tuning": {}
+  }
+}
