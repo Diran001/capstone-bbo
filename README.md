@@ -113,8 +113,8 @@ This is the main public entry point for the repository. Supporting write-ups are
 
 This repository is maintained as a research-focused capstone environment for Black-Box Bayesian Optimisation. It emphasises reproducibility, function-specific tuning, historical comparison across rounds, and transparent experimental workflow design.
 
-## Author
+### *Author: Diran Afolabi*
 
-Diran Afolabi
-
-Disclaimer: This is an experimental research prototype. It is not intended for live trading or financial advice.
+> [!IMPORTANT]
+> **Disclaimer :**
+> This is an experimental research prototype. It is not intended for live trading or financial advice.
