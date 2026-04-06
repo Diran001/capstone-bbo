@@ -2,13 +2,25 @@
 
 ## Overview
 
-This repository contains my Black-Box Bayesian Optimisation capstone work. The task is to optimise eight unknown black-box functions where I cannot see the function equations. I only learn by submitting an input vector and receiving a score back from the course portal. The practical constraint is that I can submit one new query per function per week, so each query has to be chosen carefully.
+This repository contains my capstone work on Black-Box Bayesian Optimisation. The task is to optimise eight unknown black-box functions whose analytical forms are not observable. Information about each function is obtained only through interaction with the course portal: an input vector is submitted and a corresponding score is returned.
 
-The workflow is built to be repeatable, traceable, and easy to defend. The notebook handles the modelling logic. The folder structure and helper scripts keep the weekly process organised.
+A key practical constraint of the capstone is that only one new query per function may be submitted each week. As a result, each candidate point must be selected carefully. The workflow in this repository is therefore designed to support reproducibility, traceability, and transparent justification of optimisation choices across successive rounds.
 
-## Live repository structure
+## Research objective
 
-```text
+The objective of this repository is to document and support a repeatable optimisation workflow for sparse, sequential, black-box evaluation under a strict submission budget. The repository provides an organised environment for:
+
+- maintaining cumulative observations for each function
+- generating weekly portal-ready candidate inputs
+- registering returned outputs
+- tracking progress across rounds
+- supporting transparent explanation of modelling and selection logic
+
+The repository is intended as a research-focused capstone environment rather than as a general-purpose optimisation library.
+
+## Repository structure
+
+`
 CapStone_BBO_git/
 ├── .gitignore
 ├── LICENSE
@@ -37,7 +49,7 @@ CapStone_BBO_git/
     ├── submissions/
     ├── plots/
     └── logs/
-```
+`
 
 ## What the notebook uses
 
@@ -96,3 +108,13 @@ This is the main public entry point for the repository. Supporting write-ups are
 
 - [Datasheet for the BBO data set](docs/datasheet_bbo_dataset.md)
 - [Model card for the BBO optimisation approach](docs/model_card_bbo_optimisation.md)
+
+## Research context
+
+This repository is maintained as a research-focused capstone environment for Black-Box Bayesian Optimisation. It emphasises reproducibility, function-specific tuning, historical comparison across rounds, and transparent experimental workflow design.
+
+## Author
+
+Diran Afolabi
+
+Disclaimer: This is an experimental research prototype. It is not intended for live trading or financial advice.
