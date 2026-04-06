@@ -20,7 +20,7 @@ The repository is intended as a research-focused capstone environment rather tha
 
 ## Repository structure
 
-`
+```text
 CapStone_BBO_git/
 ├── .gitignore
 ├── LICENSE
@@ -49,7 +49,7 @@ CapStone_BBO_git/
     ├── submissions/
     ├── plots/
     └── logs/
-`
+```
 
 ## What the notebook uses
 
