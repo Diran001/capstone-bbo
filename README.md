@@ -115,6 +115,6 @@ This repository is maintained as a research-focused capstone environment for Bla
 
 ### *Author: Diran Afolabi*
 
-> **[!IMPORTANT]**
+> [!IMPORTANT]
 > **Disclaimer :**
 > This repository contains experimental Bayesian optimisation research prototypes developed for academic and educational purposes. It is not intended for production deployment or operational decision-making. Any results, outputs, or observations should be treated as illustrative only.
