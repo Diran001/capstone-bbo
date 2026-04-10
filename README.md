@@ -62,6 +62,7 @@ capstone-bbo/
     ├── plots/
     ├── logs/
     └── powerbi/
+```
 
 ## What the notebook uses
 
@@ -78,6 +79,19 @@ It works from the repository root and uses these main folders:
 Processed week folders follow this convention:
 
 - `data/processed/Capstone_Project_WeekXXSubmissionProcessed/`
+
+## Development environment
+
+This repository is maintained primarily in Visual Studio Code with a Conda-managed Python environment. The project is designed to run from the repository root so that notebooks, scripts, data folders, and documentation remain consistent across weekly optimisation cycles.
+
+Environment conventions used in this repository include:
+
+- Visual Studio Code for development and notebook execution
+- Conda for Python environment and package management
+- repository-root execution for workflow consistency
+- structured local folders for data, logs, plots, submissions, and documentation
+
+Editor-specific workspace settings are generally treated as local convenience files rather than core project artefacts.
 
 ## Weekly workflow
 
