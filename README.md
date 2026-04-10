@@ -4,11 +4,17 @@
 
 This repository contains my capstone work on Black-Box Bayesian Optimisation. The task is to optimise eight unknown black-box functions whose analytical forms are not observable. Information about each function is obtained only through interaction with the course portal: an input vector is submitted and a corresponding score is returned.
 
+<p align="left">
+  <img src="./docs/images/bbo-optimisation-loop.png" width="15%" alt="Black-Box Bayesian Optimisation Process Diagram">
+  <br>
+  <i><b>Figure 1:</b> The iterative Bayesian Optimisation loop: candidate inputs are evaluated, a Gaussian Process surrogate is updated, and an acquisition function selects the next query.</i>
+</p>
+
 A key practical constraint of the capstone is that only one new query per function may be submitted each week. As a result, each candidate point must be selected carefully. The workflow in this repository is therefore designed to support reproducibility, traceability, and transparent justification of optimisation choices across successive rounds.
 
 ## Research objective
 
-The objective of this repository is to document and support a repeatable optimisation workflow for sparse, sequential, black-box evaluation under a strict submission budget. The repository provides an organised environment for:
+The objective of this repository is to document and support a repeatable optimisation workflow for sparse, sequential black-box evaluation under a strict submission budget. The repository provides an organised environment for:
 
 - maintaining cumulative observations for each function
 - generating weekly portal-ready candidate inputs
@@ -16,19 +22,23 @@ The objective of this repository is to document and support a repeatable optimis
 - tracking progress across rounds
 - supporting transparent explanation of modelling and selection logic
 
-The repository is intended as a research-focused capstone environment rather than as a general-purpose optimisation library.
+This repository is intended as a research-focused capstone environment rather than as a general-purpose optimisation library.
 
 ## Repository structure
 
 ```text
-CapStone_BBO_git/
+capstone-bbo/
 ├── .gitignore
+├── .vscode/
 ├── LICENSE
 ├── README.md
 ├── requirements.txt
 ├── notebooks/
-│   └── CapStone_BBO_Workflow.ipynb
+│   └── bbo_workflow.ipynb
 ├── scripts/
+│   ├── backfill_historical_enhanced_plots.py
+│   ├── bbo_plotting_patch.py
+│   ├── build_powerbi_dataset.py
 │   ├── cap_scr_v010_week.cmd
 │   ├── cap_scr_v010_run_week.cmd
 │   ├── cap_scr_v010_prepare_week.cmd
@@ -42,14 +52,16 @@ CapStone_BBO_git/
 │   ├── README_bbo_export.md
 │   ├── README_export.md
 │   ├── datasheet_bbo_dataset.md
-│   └── model_card_bbo_optimisation.md
+│   ├── model_card_bbo_optimisation.md
+│   └── images/
+│       └── bbo-optimisation-loop.png
 └── data/
     ├── initial_data/
     ├── processed/
     ├── submissions/
     ├── plots/
-    └── logs/
-```
+    ├── logs/
+    └── powerbi/
 
 ## What the notebook uses
 
@@ -79,11 +91,13 @@ Processed week folders follow this convention:
 
 ## Technical approach
 
-The current workflow uses a Gaussian Process surrogate per function with acquisition-based candidate selection. In practical terms, the notebook uses:
+The current workflow uses a Gaussian Process surrogate per function with acquisition-based candidate selection. 
 
-- scikit-learn Gaussian Process regression
-- a Matérn kernel with explicit noise handling
-- acquisition rules such as Expected Improvement, Probability of Improvement, and Upper Confidence Bound
+In practical terms, the notebook uses:
+- **scikit-learn Gaussian Process regression**
+- **A Matérn kernel** with explicit noise handling:
+  $k(x, x') = \sigma^2 \frac{2^{1-\nu}}{\Gamma(\nu)} \left( \sqrt{2\nu} \frac{d}{\rho} \right)^\nu K_\nu \left( \sqrt{2\nu} \frac{d}{\rho} \right)$
+- **Acquisition rules** such as Expected Improvement (EI), Probability of Improvement (PI), and Upper Confidence Bound (UCB).
 - large random candidate sampling to approximate the best next point in the bounded search space
 
 This is a good fit for the capstone because the data is sparse and the evaluation budget is tight.
