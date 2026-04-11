@@ -19,3 +19,9 @@ data/logs/cmd/
 .venv/
 venv/
 env/
+
+# Local rerun/backfill backups
+data/initial_data/function_*/backups/*_before_week*.npy
+
+# Local submission safety copies
+data/submissions/archive/
