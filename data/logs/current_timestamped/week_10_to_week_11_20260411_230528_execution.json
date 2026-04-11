@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-04-11 23:05:28",
+  "run_week": 10,
+  "week_processed": 10,
+  "next_week": 11,
+  "tuning_week_used": 11,
+  "summary": {
+    "1": {
+      "old_size": 19,
+      "new_size": 20,
+      "new_value": -5.066031550080181e-162,
+      "old_best": 2.569308323264287e-12,
+      "new_best": 2.569308323264287e-12,
+      "improved": 

@@ -93,6 +93,24 @@ Environment conventions used in this repository include:
 
 Editor-specific workspace settings are generally treated as local convenience files rather than core project artefacts.
 
+$BBOSection = @"
+
+## Environment Setup and Daily Working Pattern
+
+- **Repo root:** `C:\Projects\BBO_Capstone\capstone-bbo`
+- **Environment:** Conda (`bbo312`)
+- **Launch:**
+
+ ```powershell
+conda activate bbo312
+VS Code: Ensure the notebook kernel or Python interpreter is set to bbo312.
+Dependency files: environment.yml and requirements.txt
+Git rule: Run Git commands only from the repo root or its subfolders.
+```
+
+$BBOSection | Add-Content -Path "C:\Projects\BBO_Capstone\capstone-bbo\README.md"
+Write-Host "BBO README updated." -ForegroundColor Green
+
 ## Weekly workflow
 
 1. Start from the current cumulative data in `data/initial_data/`.
